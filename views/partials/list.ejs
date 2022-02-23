@@ -1,0 +1,21 @@
+<h2 class="ui dividing header">Company</h2>
+<div class="ui middle aligned divided list">
+    <% for(var i=0; i < data.length; i++) { %>
+    <div class="item">
+        <div class="right floated content">
+            <div class="ui button"><a href="/<%= data[i] %>">View</a></div>
+        </div>
+        <div class="content">
+            Test <%= i %>
+            <br/>
+            description
+        </div>
+    </div>
+    <% } %>
+</div>
+
+<script>
+    $(".button").click(()=>{
+        console.log("clicked.");
+    });
+</script>
